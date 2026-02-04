@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Cadastro de Cliente</title>
+  </head>
+  <body>
+    <h1>Cadastro de Cliente</h1>
+
+    <form method="post">
+      {% csrf_token %}
+
+  <div class="form-group row">
+    <label for="nome" class="col-sm-2 col-form-label">Nome</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="nome" name="nome">
+    </div>
+  </div>
+      <div class="form-group row">
+    <label for="telefone" class="col-sm-2 col-form-label">Telefone</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="telefone" name="telefone">
+    </div>
+  </div>
+
+      <div class="form-group row">
+    <label for="email" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="email" name="email">
+    </div>
+  </div>
+
+            <div class="form-group row">
+    <label for="cep" class="col-sm-2 col-form-label">Cep</label>
+    <div class="col-sm-10">
+      <input type="cep" class="form-control" id="cep" name="cep">
+    </div>
+  </div>
+
+            <div class="form-group row">
+    <label for="numero" class="col-sm-2 col-form-label">Numero</label>
+    <div class="col-sm-10">
+      <input type="numero" class="form-control" id="numero" name="numero">
+    </div>
+  </div>
+
+            <div class="form-group row">
+    <label for="compl" class="col-sm-2 col-form-label">Complemento</label>
+    <div class="col-sm-10">
+      <input type="compl" class="form-control" id="compl" name="compl">
+    </div>
+  </div>
+
+                <div class="form-group row">
+    <label for="endereco" class="col-sm-2 col-form-label">Endereço</label>
+    <div class="col-sm-10">
+      <input type="endereco" class="form-control" id="endereco" name="endereco" value="endereco.logradouro}}">
+    </div>
+  </div>
+
+                <div class="form-group row">
+    <label for="bairro" class="col-sm-2 col-form-label">Bairro</label>
+    <div class="col-sm-10">
+      <input type="bairro" class="form-control" id="bairro" name="bairro" value="endereco.bairro}}">
+    </div>
+  </div>
+
+                      <div class="form-group row">
+    <label for="cidade" class="col-sm-2 col-form-label">Cidade</label>
+    <div class="col-sm-10">
+      <input type="cidade" class="form-control" id="cidade" name="cidade" value="endereco.localidade}}">
+    </div>
+  </div>
+
+                      <div class="form-group row">
+    <label for="uf" class="col-sm-2 col-form-label">UF</label>
+    <div class="col-sm-10">
+      <input type="uf" class="form-control" id="uf" name="uf" value="endereco.uf}}">
+    </div>
+  </div>
+
+
+      <button type="submit" class="btn btn-info">Enviar</button>
+
+
+</form>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
